@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HTML Template</title>
+        <meta name="description" content="Quiz Task 2">
+        <meta name="author" content="Dmytro T.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="FormContainer">
+            <div class="FormContainer-field">
+                <label for="fullName">
+                    Your full given name:</label>
+                <input id="fullName">
+            </div>
+            <div class="FormContainer-row">
+                <div class="FormContainer-field">
+                    <label for="dateOfBirth">
+                        Date of Birth
+                    </label>
+                    <div class="FormContainer-field-dateOfBirth">
+                        <input
+                            id="dateOfBirth"
+                            class="FormContainer-field-dateOfBirth-text"
+                        >
+                        <img
+                            class="FormContainer-field-dateOfBirth-icon"
+                            src="./images/calendar.svg"
+                            alt="svg"
+                        ></img>
+                    </div>
+                </div>
+                <div class="FormContainer-field">
+                    <label for="residenceCountry">
+                        Country of residence or citizenship:
+                    </label>
+                    <input id="residenceCountry">
+                </div>
+            </div>
+            <div class="FormContainer-field">
+                <label for="schoolToAttend">
+                    What school do you plan to attend?
+                </label>
+                <input id="schoolToAttend">
+            </div>
+            <div class="FormContainer-field">
+                <label for="intendedArea">
+                    Please take a moment to describe your intended area of study:
+                </label>
+                <textarea id="intendedArea" placeholder="Enter details here"></textarea>
+            </div>
+        </div>
+    </body>
+</html>
