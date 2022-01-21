@@ -1,0 +1,26 @@
+:root {
+    --brand-color-1: #ede0d4;
+    --brand-color-2: #e6ccb2;
+    --brand-color-3: #ddb892;
+    --brand-color-4: #b08968;
+    --brand-color-5: #7f5539;
+    --brand-color-6: #9c6644;
+
+    --white: #fff;
+    --border-color: var(--brand-color-5);
+
+    --background: var(--brand-color-1);
+    --panel-background: var(--brand-color-2);
+    --card-background: var(--brand-color-1);
+    --card-badge-background: var(--brand-color-1);
+
+    --font-color: var(--brand-color-1);
+    --font-size: 20px;
+    --font-family: Garamond, serif;
+
+    --border: 1px solid var(--border-color);
+    --thickBorder: 3px solid var(--border-color);
+
+    --max-results-height: 400px;
+    --min-card-width: 120px;
+}

@@ -1,0 +1,9 @@
+body {
+    background-color: var(--brand-color-1);
+    font-family: var(--font-family);
+}
+
+input,
+input::placeholder {
+    font-family: var(--font-family);
+}
