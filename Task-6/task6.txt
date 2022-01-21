@@ -1,0 +1,9 @@
+Task:
+Please see taskDescription.ts for task description.
+
+Findings:
+1)  Create wrapper for Api to hide all common functionality inside. For example,
+const  authData = await login(email, password);
+2)  Add local storage wrapper (can be hook, const [authData, setAuthData] = useLocalAuth() ) + combine userId, tenantId and accessToken into an object and store it as authData key. Setting states 3 times can cause 3 refreshes (can be costy in some cases – React 17 introduced batching, but, I assume, there is an older version available). For example,
+setAuthData ({ userId, tenantId, accessToken })
+3)  It would be better to build accessToken according to jwt and best practices. Payload can contain userId and tenantId.
