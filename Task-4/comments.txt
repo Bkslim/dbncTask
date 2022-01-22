@@ -1,0 +1,11 @@
+Line 18. echo value is unavailable for promise object.
+We need either add
+    response.json().then(result => ....
+or move to the next Then section
+...
+.then(function (response) {
+    return response.json();
+})
+.then(function (result) {
+    <<<< Here we can operate with json response >>>>
+...
