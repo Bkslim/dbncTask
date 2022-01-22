@@ -33,6 +33,12 @@ describe('DataPanel tests', () => {
         expect(screen.getByText('Test Error')).toBeInTheDocument();
     });
 
+    test('renders default error', () => {
+        renderComponent({ error: new Error() });
+
+        expect(screen.getByText('Unknown Error')).toBeInTheDocument();
+    });
+
     test('renders error', () => {
         renderComponent({ data: null });
 
