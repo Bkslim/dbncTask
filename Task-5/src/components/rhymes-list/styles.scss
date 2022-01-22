@@ -1,0 +1,21 @@
+.RhymesList {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(var(--min-card-width), auto)
+    );
+    padding: 10px 20px;
+    background: var(--panel-background);
+    border: var(--border);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    max-height: var(--max-results-height);
+    overflow-y: auto;
+
+    & > h3 {
+        color: var(--brand-color-6);
+        font-variant: small-caps;
+        text-decoration: underline;
+    }
+}
